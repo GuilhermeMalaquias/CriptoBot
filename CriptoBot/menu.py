@@ -1,7 +1,7 @@
 class Menu:
     def __init__(self):
         self.divisorMenu = '='*40
-        self.infoBot = 'BotBitcoin / Versao: 1.1.1'
+        self.infoBot = 'CriptoBot / Versao: 1.1.1'
         self.desenvolvedor = 'Guilherme Malaquias da Silva'
     def menuInicial(self):
         print('Seja Bem Vindo!')
