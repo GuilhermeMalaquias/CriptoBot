@@ -1,24 +1,37 @@
-import requests
+from datetime import datetime
 import json
+import requests
+
+BASE_URL = 'https://economia.awesomeapi.com.br/json/'
+
 
 class Request:
-    def req(self, moeda):
-        '''
+    def req(self, moeda: str):
+        """
         moeda = BTC-BRL
         moeda = LTC-BRL
-        '''
+        """
         self.moeda = moeda
-        self.request = requests.get(f'https://economia.awesomeapi.com.br/json/all/{self.moeda}')
+        self.request = requests.get(f'{BASE_URL}all/{self.moeda}')
         self.context = json.loads(self.request.text)
-    def filterReq(self):
+
+    def req_intervalo_dia(self):
+        self.request_intervalo = requests.get(f'{BASE_URL}daily/{self.moeda}/{self.dias}')
+        self.context_intervalo = json.loads(self.request_intervalo.text)
+
+        # for iten in self.context_intervalo:
+        #   print(iten['bid'])
+
+    def filter_req(self):
         self.name = self.context[self.moeda]['name']
-        self.maxima = float(self.context[self.moeda]['high'])
-        self.minima = float(self.context[self.moeda]['low'])
-        return f'Nome da Moeda: {self.name}\nValor Maximo: R$ {self.maxima:.2f}\nValor Minimo: R$ {self.minima:.2f}'.replace('.', ',')
-        
+        self.atual = float(self.context[self.moeda]['bid'])
+        self.data = self.context[self.moeda]['timestamp']
+        self.data = datetime.fromtimestamp(int(self.data)).strftime('%d/%m/%Y')
+
+        return f'Nome: {self.name}\nValor: R$ {self.atual:.2f}\nData: {self.data}'.replace('.', ',')
+
+
 if __name__ == "__main__":
     c = Request()
     c.req('BTC')
-    print(c.filterReq())
-
-    
+    print(c.filter_req())
