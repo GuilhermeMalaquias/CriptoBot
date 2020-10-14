@@ -1,8 +1,6 @@
-class Moedas:
-    def mostra_moedas(self):
-        return '1 - BTC-BRL (Bitcoin)\n2 - LTC-BRL (Litecoin)\n3 - ETH-BRL (Ethereum)\n4 - XRP-BRL (Ripple)'
 
-    def escolhas_moeda(self, entrada_tipo_moeda: int) -> str:
+class Moedas:
+    def escolhas_moeda(self, entrada_tipo_moeda: int):
         self.moeda = entrada_tipo_moeda
         if self.moeda == 1:
             return 'BTC'
@@ -16,5 +14,4 @@ class Moedas:
 
 if __name__ == "__main__":
     moedas = Moedas()
-    print(moedas.moedas())
     print(moedas.escolhas_moeda(1))
