@@ -1,6 +1,11 @@
+from menu import Menu
 from datetime import datetime
 import json
 import requests
+
+
+menu = Menu()
+
 
 BASE_URL = 'https://economia.awesomeapi.com.br/json/'
 
@@ -28,7 +33,7 @@ class Request:
         self.data = self.context[self.moeda]['timestamp']
         self.data = datetime.fromtimestamp(int(self.data)).strftime('%d/%m/%Y')
 
-        return f'Nome: {self.name}\nValor: R$ {self.atual:.2f}\nData: {self.data}'.replace('.', ',')
+        return f'{menu.divMenu}\nNome: {self.name}\nValor: R$ {self.atual:.2f}\nData: {self.data}\n{menu.divMenu}'.replace('.', ',')
 
 
 if __name__ == "__main__":
