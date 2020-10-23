@@ -5,6 +5,8 @@ from menu import Menu
 requisicao = Request()
 menu = Menu()
 
+INTERVALO_NAO_ZERO_OU_NEGATIVO = 0
+
 
 class Moedas:
 
@@ -16,9 +18,10 @@ class Moedas:
         }
         if self.option not in escolha_dic.keys():
             raise KeyError
-        print(menu.mostra_moedas_menu())
-        self.tmp_moeda = int(input('Escolha:'))
-        return escolha_dic[self.option](self.tmp_moeda)
+        else:
+            print(menu.mostra_moedas_menu())
+            self.tmp_moeda = int(input('Escolha:'))
+            return escolha_dic[self.option](self.tmp_moeda)
 
     def escolhas_moeda(self, entrada_tipo_moeda: int):
         self.moeda = entrada_tipo_moeda
@@ -29,7 +32,10 @@ class Moedas:
             3: lambda temp: requisicao.req('ETH'),
             4: lambda temp: requisicao.req('XRP'),
         }
-        return self.moeda_dic[self.moeda](self.tmp_moeda)
+        if self.moeda not in self.moeda_dic.keys():
+            raise KeyError
+        else:
+            return self.moeda_dic[self.moeda](self.tmp_moeda)
 
     def escolhas_moeda_intervalo(self, entrada_tipo_moeda: int):
         self.moeda = entrada_tipo_moeda
@@ -42,11 +48,8 @@ class Moedas:
         if self.tmp_moeda not in self.moeda_dic.keys():
             raise KeyError
         self.tmp_moeda_intervalo = int(input("Informe o intervalo de Dias:"))
-        if self.tmp_moeda_intervalo <= 0:
+        if self.tmp_moeda_intervalo <= INTERVALO_NAO_ZERO_OU_NEGATIVO:
             raise ValueError
-        return self.moeda_dic[self.moeda](self.tmp_moeda)
 
-
-if __name__ == "__main__":
-    moedas = Moedas()
-    print(moedas.escolha_menu(2))
+        else:
+            return self.moeda_dic[self.moeda](self.tmp_moeda)

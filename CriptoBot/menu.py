@@ -13,6 +13,3 @@ class Menu:
                f'Ripple)\n{self.divMenu}'
 
 
-if __name__ == "__main__":
-    c = Menu()
-
