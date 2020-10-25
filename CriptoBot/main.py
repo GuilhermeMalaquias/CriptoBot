@@ -10,6 +10,7 @@ requisicao = Request()
 
 SAIR = 0
 
+
 while True:
     print(menu.inicial_menu())
     escolha = int(input('Escolha:'))

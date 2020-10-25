@@ -5,6 +5,7 @@ from menu import Menu
 requisicao = Request()
 menu = Menu()
 
+
 INTERVALO_NAO_ZERO_OU_NEGATIVO = 0
 
 

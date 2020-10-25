@@ -9,6 +9,7 @@ BASE_URL = 'https://economia.awesomeapi.com.br/json/'
 
 
 class Request:
+
     def req(self, moeda: str):
         """
         moeda = BTC-BRL
