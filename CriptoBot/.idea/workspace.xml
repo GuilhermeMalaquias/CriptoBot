@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="365dabe8-763e-4186-8d27-391e9c4265fc" name="Default Changelist" comment="Arrumando os desfios de decisoes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ihsWCcWHJPGojp4OhF7el1wET0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Git/Python Pro/Birds/pythonbirds" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in teste_moeda.py">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CriptoBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CriptoBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="moedas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CriptoBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/moedas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="req" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CriptoBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/req.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="teste_moeda" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CriptoBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste_moeda.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in teste_moeda.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="CriptoBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/teste_moeda.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.teste_moeda" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.moedas" />
+        <item itemvalue="Python.req" />
+        <item itemvalue="Python.menu" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="365dabe8-763e-4186-8d27-391e9c4265fc" name="Default Changelist" comment="" />
+      <created>1602371188235</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602371188235</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Melhorias na oo!">
+      <created>1602618191678</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602618191678</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Correcao da funcao mostrar_moeda_menu">
+      <created>1602703911973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602703911973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removendo funcao mostrar_moeda">
+      <created>1602703962529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602703962529</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Melhorando a Saida da funcao filter_req">
+      <created>1602703997145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602703997145</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Removendo linhas desnecessaria">
+      <created>1602704042794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602704042794</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Reduzindo &quot;If`s&quot; usando dicionario e expressao lambda.">
+      <created>1602959534892</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602959534892</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adicionando a funcao &quot;Consultar moeda por intervalo&quot;.">
+      <created>1603124569248</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603124569248</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Arrumando os desfios de decisoes">
+      <created>1603470907039</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603470907039</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Melhorias na oo!" />
+    <MESSAGE value="Correcao da funcao mostrar_moeda_menu" />
+    <MESSAGE value="Removendo funcao mostrar_moeda" />
+    <MESSAGE value="Melhorando a Saida da funcao filter_req" />
+    <MESSAGE value="Removendo linhas desnecessaria" />
+    <MESSAGE value="Reduzindo &quot;If`s&quot; usando dicionario e expressao lambda." />
+    <MESSAGE value="adicionando a funcao &quot;Consultar moeda por intervalo&quot;." />
+    <MESSAGE value="Arrumando os desfios de decisoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrumando os desfios de decisoes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="467" y="109" width="426" height="496" key="FileChooserDialogImpl" timestamp="1603471803062">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state x="467" y="109" width="426" height="496" key="FileChooserDialogImpl/0.0.1360.714@0.0.1360.714" timestamp="1603471803062" />
+    <state width="1337" height="163" key="GridCell.Tab.0.bottom" timestamp="1603472220190">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="163" key="GridCell.Tab.0.bottom/0.0.1360.714@0.0.1360.714" timestamp="1603472220190" />
+    <state width="1337" height="163" key="GridCell.Tab.0.center" timestamp="1603472220190">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="163" key="GridCell.Tab.0.center/0.0.1360.714@0.0.1360.714" timestamp="1603472220190" />
+    <state width="1337" height="163" key="GridCell.Tab.0.left" timestamp="1603472220190">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="163" key="GridCell.Tab.0.left/0.0.1360.714@0.0.1360.714" timestamp="1603472220190" />
+    <state width="1337" height="163" key="GridCell.Tab.0.right" timestamp="1603472220190">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="163" key="GridCell.Tab.0.right/0.0.1360.714@0.0.1360.714" timestamp="1603472220190" />
+    <state width="1337" height="204" key="GridCell.Tab.1.bottom" timestamp="1603057039778">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="204" key="GridCell.Tab.1.bottom/0.0.1360.714@0.0.1360.714" timestamp="1603057039778" />
+    <state width="1337" height="204" key="GridCell.Tab.1.center" timestamp="1603057039778">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="204" key="GridCell.Tab.1.center/0.0.1360.714@0.0.1360.714" timestamp="1603057039778" />
+    <state width="1337" height="204" key="GridCell.Tab.1.left" timestamp="1603057039778">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="204" key="GridCell.Tab.1.left/0.0.1360.714@0.0.1360.714" timestamp="1603057039778" />
+    <state width="1337" height="204" key="GridCell.Tab.1.right" timestamp="1603057039778">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state width="1337" height="204" key="GridCell.Tab.1.right/0.0.1360.714@0.0.1360.714" timestamp="1603057039778" />
+    <state x="188" y="0" key="SettingsEditor" timestamp="1602600975639">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state x="188" y="0" key="SettingsEditor/0.0.1360.714@0.0.1360.714" timestamp="1602600975639" />
+    <state x="279" y="87" key="Vcs.Push.Dialog.v2" timestamp="1603470912191">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state x="279" y="87" key="Vcs.Push.Dialog.v2/0.0.1360.714@0.0.1360.714" timestamp="1603470912191" />
+    <state x="470" y="243" width="361" height="180" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602703811655">
+      <screen x="0" y="0" width="1360" height="714" />
+    </state>
+    <state x="470" y="243" width="361" height="180" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.714@0.0.1360.714" timestamp="1602703811655" />
+  </component>
+</project>
