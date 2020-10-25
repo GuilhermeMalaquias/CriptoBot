@@ -9,7 +9,6 @@ INTERVALO_NAO_ZERO_OU_NEGATIVO = 0
 
 
 class Moedas:
-
     def escolha_menu(self, option: int):
         self.option = option
         escolha_dic = {

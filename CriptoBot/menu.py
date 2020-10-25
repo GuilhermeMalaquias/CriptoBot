@@ -11,5 +11,3 @@ class Menu:
     def mostra_moedas_menu(self) -> str:
         return f'{self.divMenu}\n1 - BTC-BRL (Bitcoin)\n2 - LTC-BRL (Litecoin)\n3 - ETH-BRL (Ethereum)\n4 - XRP-BRL (' \
                f'Ripple)\n{self.divMenu}'
-
-

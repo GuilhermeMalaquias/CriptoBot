@@ -9,7 +9,6 @@ BASE_URL = 'https://economia.awesomeapi.com.br/json/'
 
 
 class Request:
-
     def req(self, moeda: str):
         """
         moeda = BTC-BRL
@@ -45,8 +44,3 @@ class Request:
             print(f'Nome: {self.name}\n'
                   f'Valor: {float(self.context_intervalo[item_name]["bid"]):.2f}\n'
                   f'Data: {datetime.fromtimestamp(int(self.context_intervalo[item_name]["timestamp"])).strftime("%d/%m/%Y")}\n{menu.divMenu}'.replace(".", ","))
-
-
-if __name__ == "__main__":
-    c = Request()
-    c.req_intervalo_dia('BTC', 10)
