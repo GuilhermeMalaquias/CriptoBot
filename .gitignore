@@ -2,3 +2,4 @@ venv/
 .vscode/
 CriptoBot/__pycache__/
 CriptoBot/.idea/
+*.xml
