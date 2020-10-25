@@ -26,11 +26,8 @@ class Request:
         self.moeda = moeda
         self.dias = dias
         self.request_intervalo = requests.get(f'{BASE_URL}daily/{self.moeda}/{self.dias}')
-        if self.request_intervalo.status_code == 404:
-            raise ConnectionError('Api indisponivel no momento')
-        else:
-            self.context_intervalo = json.loads(self.request_intervalo.text)
-            return self.filter_req_intervalo()
+        self.context_intervalo = json.loads(self.request_intervalo.text)
+        return self.filter_req_intervalo()
 
     def filter_req(self):
         self.name = self.context[self.moeda]['name']
@@ -48,3 +45,8 @@ class Request:
             print(f'Nome: {self.name}\n'
                   f'Valor: {float(self.context_intervalo[item_name]["bid"]):.2f}\n'
                   f'Data: {datetime.fromtimestamp(int(self.context_intervalo[item_name]["timestamp"])).strftime("%d/%m/%Y")}\n{menu.divMenu}'.replace(".", ","))
+
+
+if __name__ == "__main__":
+    c = Request()
+    c.req_intervalo_dia('BTC', 10)
