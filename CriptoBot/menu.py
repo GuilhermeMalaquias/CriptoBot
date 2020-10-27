@@ -6,8 +6,8 @@ class Menu:
         self.desenvolvedor = 'Guilherme Malaquias'
 
     def inicial_menu(self) -> str:
-        return f'{self.divMenu}\n0 - Para sair\n1 - Consultar Moeda\n2 - Consultar Moeda Por Intervalo\n{self.divMenu}'
+        return f'{self.divMenu}\n0 - Consultar Moeda\n1 - Consultar Moeda Por Intervalo\n\n2 - Para sair\n{self.divMenu}'
 
     def mostra_moedas_menu(self) -> str:
         return f'{self.divMenu}\n1 - BTC-BRL (Bitcoin)\n2 - LTC-BRL (Litecoin)\n3 - ETH-BRL (Ethereum)\n4 - XRP-BRL (' \
-               f'Ripple)\n9 - Voltar\n{self.divMenu}'
+               f'Ripple)\n\n9 - Voltar\n{self.divMenu}'

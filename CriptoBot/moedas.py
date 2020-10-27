@@ -13,8 +13,8 @@ class Moedas:
     def escolha_menu(self, option: int):
         self.option = option
         escolha_dic = {
-            1: lambda temp: self.escolhas_moeda(self.tmp_moeda),
-            2: lambda temp: self.escolhas_moeda_intervalo(self.tmp_moeda),
+            0: lambda temp: self.escolhas_moeda(self.tmp_moeda),
+            1: lambda temp: self.escolhas_moeda_intervalo(self.tmp_moeda),
         }
         if self.option not in escolha_dic.keys():
             raise KeyError

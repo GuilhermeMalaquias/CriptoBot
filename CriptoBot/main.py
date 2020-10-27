@@ -8,7 +8,7 @@ tipo_moeda = Moedas()
 requisicao = Request()
 
 
-SAIR = 0
+SAIR = 2
 
 
 while True:
