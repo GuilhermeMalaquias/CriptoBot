@@ -6,6 +6,7 @@ requisicao = Request()
 menu = Menu()
 
 INTERVALO_NAO_ZERO_OU_NEGATIVO = 0
+VOLTAR = 9
 
 
 class Moedas:
@@ -20,7 +21,10 @@ class Moedas:
         else:
             print(menu.mostra_moedas_menu())
             self.tmp_moeda = int(input('Escolha:'))
-            return escolha_dic[self.option](self.tmp_moeda)
+            if self.tmp_moeda == VOLTAR:
+                return ''
+            else:
+                return escolha_dic[self.option](self.tmp_moeda)
 
     def escolhas_moeda(self, entrada_tipo_moeda: int):
         self.moeda = entrada_tipo_moeda

@@ -15,7 +15,7 @@ while True:
     print(menu.inicial_menu())
     escolha = int(input('Escolha:'))
     if escolha == SAIR:
-        print('\033[1;33mSaindo...\033[m')
+        print('Saindo...')
         sleep(2)
         print(f'Desenvolvedor: {menu.desenvolvedor}\n{menu.infoBot}')
         break
@@ -23,6 +23,6 @@ while True:
         tipo_moeda.escolha_menu(escolha)
         sleep(2)
     except KeyError:
-        print('\033[1;31mOpcao Invalida\033[m')
+        print('Opcao Invalida')
     except ValueError:
-        print('\033[1;31mInsira um valor Valido\033[m')
+        print('Insira um valor Valido')
