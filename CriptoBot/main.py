@@ -9,7 +9,7 @@ requisicao = Request()
 
 
 SAIR = 2
-
+NAO = 2
 
 while True:
     print(menu.inicial_menu())
@@ -21,8 +21,18 @@ while True:
         break
     try:
         tipo_moeda.escolha_menu(escolha)
-        sleep(2)
     except KeyError:
         print('Opcao Invalida')
     except ValueError:
         print('Insira um valor Valido')
+    else:
+        sleep(2)
+        print(menu.decisao_menu())
+        escolha_decisao_menu = int(input('Escolha:'))
+        if escolha_decisao_menu == NAO:
+            print('Saindo...')
+            sleep(2)
+            print(f'Desenvolvedor: {menu.desenvolvedor}\n{menu.infoBot}')
+            break
+        else:
+            continue
