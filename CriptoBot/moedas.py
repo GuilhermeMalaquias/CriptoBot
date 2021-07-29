@@ -30,12 +30,13 @@ class Moedas:
         self.moeda = entrada_tipo_moeda
         self.tmp_moeda = ''
         self.moeda_dic = {
-            1: lambda temp: requisicao.req('BTC'),
-            2: lambda temp: requisicao.req('LTC'),
-            3: lambda temp: requisicao.req('ETH'),
-            4: lambda temp: requisicao.req('XRP'),
+            1: lambda temp: requisicao.req('bitcoin'),
+            2: lambda temp: requisicao.req('litecoin'),
+            3: lambda temp: requisicao.req('ethereum'),
+            4: lambda temp: requisicao.req('ripple'),
         }
         if self.moeda not in self.moeda_dic.keys():
+            
             raise KeyError
         else:
             return self.moeda_dic[self.moeda](self.tmp_moeda)
@@ -43,14 +44,16 @@ class Moedas:
     def escolhas_moeda_intervalo(self, entrada_tipo_moeda: int):
         self.moeda = entrada_tipo_moeda
         self.moeda_dic = {
-            1: lambda temp: requisicao.req_intervalo_dia('BTC', self.tmp_moeda_intervalo),
-            2: lambda temp: requisicao.req_intervalo_dia('LTC', self.tmp_moeda_intervalo),
-            3: lambda temp: requisicao.req_intervalo_dia('ETH', self.tmp_moeda_intervalo),
-            4: lambda temp: requisicao.req_intervalo_dia('XRP', self.tmp_moeda_intervalo),
+            1: lambda temp: requisicao.req_intervalo_dia('bitcoin', self.tmp_moeda_intervalo),
+            2: lambda temp: requisicao.req_intervalo_dia('litecoin', self.tmp_moeda_intervalo),
+            3: lambda temp: requisicao.req_intervalo_dia('ethereum', self.tmp_moeda_intervalo),
+            4: lambda temp: requisicao.req_intervalo_dia('ripple', self.tmp_moeda_intervalo),
         }
         if self.tmp_moeda not in self.moeda_dic.keys():
+            print("Aqui")
             raise KeyError
         self.tmp_moeda_intervalo = int(input("Informe o intervalo de Dias:"))
+        
         if self.tmp_moeda_intervalo <= INTERVALO_NAO_ZERO_OU_NEGATIVO:
             raise ValueError
 
