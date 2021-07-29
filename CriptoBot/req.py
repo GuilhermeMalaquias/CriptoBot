@@ -5,7 +5,7 @@ import requests
 
 menu = Menu()
 
-BASE_URL = 'https://economia.awesomeapi.com.br/json/'
+BASE_URL = 'https://api.coingecko.com/api/v3/'
 
 
 class Request:
@@ -15,32 +15,37 @@ class Request:
         moeda = LTC-BRL
         """
         self.moeda = moeda
-        self.request = requests.get(f'{BASE_URL}all/{self.moeda}')
+        self.request = requests.get(f'{BASE_URL}/coins/{self.moeda}')
         if self.request.status_code == 404:
             raise ConnectionError('Api indisponivel no momento')
-        self.context = json.loads(self.request.text)
+        
+        self.context = self.request.json()
         return self.filter_req()
 
     def req_intervalo_dia(self, moeda: str, dias: int):
         self.moeda = moeda
         self.dias = dias
-        self.request_intervalo = requests.get(f'{BASE_URL}daily/{self.moeda}/{self.dias}')
-        self.context_intervalo = json.loads(self.request_intervalo.text)
+        self.request_intervalo = requests.get(f'{BASE_URL}coins/{self.moeda}/market_chart?vs_currency=brl&days={self.dias}&interval=daily')
+        self.context_intervalo = self.request_intervalo.json()
         return self.filter_req_intervalo()
+        # coins/bitcoin/market_chart?vs_currency=usd&days=10&interval=daily
 
     def filter_req(self):
-        self.name = self.context[self.moeda]['name']
-        self.atual = float(self.context[self.moeda]['bid'])
-        self.data = self.context[self.moeda]['timestamp']
-        self.data = datetime.fromtimestamp(int(self.data)).strftime('%d/%m/%Y')
-        print(f'{menu.divMenu}\nNome: {self.name}\nValor: R$ {self.atual:.2f}\nData: {self.data}\n{menu.divMenu}'.replace(
+        self.name = self.context['name']
+        self.atual = float(self.context['market_data']['current_price']['brl'])
+        # self.data = self.context['market_data']['ath_date']['brl']
+        # self.data = datetime.fromtimestamp(int(self.data)).strftime('%d/%m/%Y')
+        print(f'{menu.divMenu}\nNome: {self.name}\nValor: R$ {self.atual:.2f}\n{menu.divMenu}'.replace(
             '.',
             ','))
 
     def filter_req_intervalo(self):
-        self.name = self.context_intervalo[0]['name']
         print(menu.divMenu)
-        for item_name in range(len(self.context_intervalo)):
-            print(f'Nome: {self.name}\n'
-                  f'Valor: {float(self.context_intervalo[item_name]["bid"]):.2f}\n'
-                  f'Data: {datetime.fromtimestamp(int(self.context_intervalo[item_name]["timestamp"])).strftime("%d/%m/%Y")}\n{menu.divMenu}'.replace(".", ","))
+        for i in self.context_intervalo['prices']:
+            
+            print('Nome: {}\nData: {}\nValor: {}\n{}'.format(self.moeda.capitalize(), *i,menu.divMenu))
+            
+
+
+              
+
