@@ -2,7 +2,7 @@ class Menu:
 
     def __init__(self):
         self.divMenu = '=' * 40
-        self.infoBot = 'CriptoBot / Versao: 1.1.1'
+        self.infoBot = 'CriptoBot / Versao: 1.1.2'
         self.desenvolvedor = 'Guilherme Malaquias'
 
     def inicial_menu(self) -> str:
